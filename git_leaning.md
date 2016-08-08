@@ -95,6 +95,4 @@ git clone命令克隆。Git支持多种协议，包括https，但通过ssh支持
 合并某分支到当前分支：git merge <name>
 
 删除分支：git branch -d <name>
-
-tagtag tagaaa
  
