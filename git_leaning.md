@@ -72,8 +72,8 @@ git://协议较为快速和有效,但是有时必须使用http协议,比如你�
 + **git merge** 命令把不同分支合并起来。合并前，索引必须和当前提交相同。如果另一个分支是当前提交的祖父节点，那么合并命令将什么也不做。
 
 + **git stash** 可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作：git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
-
 另一种方式是用git stash pop，恢复的同时把stash内容也删了.
+ 
 
 总结：
 
@@ -99,3 +99,4 @@ git clone命令克隆。Git支持多种协议，包括https，但通过ssh支持
 
 删除分支：git branch -d <name>
 
+修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
